@@ -1,5 +1,18 @@
 {
-    "name": "mp-ecommerce-php",
-    "type": "project",
-    "require": {}
+    "name": "merca/kons12",
+    "description": "Certificacion Mercado Pago",
+    "autoload": {
+        "psr-4": {
+            "Merca\\Kons12\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Yahir Melgarejo Tadeo",
+            "email": "dev-yahirmt@hotmail.com"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "^1.12"
+    }
 }
