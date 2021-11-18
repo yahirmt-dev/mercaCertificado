@@ -73,7 +73,7 @@ $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = $_POST['title'];
 $item->picture_url = "http://mercado.konstela.com/".$_POST['img'];
-$item->description = "Dispositivo móvil de Tienda e-commerce";
+$item->description = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = 1;
 $item->unit_price = $_POST['price'];
 $item->currency_id = "MXN";
@@ -89,13 +89,13 @@ $payer = new MercadoPago\Payer();
     "number" => "22223333"
   );
   $payer->address = array(
-    "street_name" => " Falsa",
+    "street_name" => "Falsa",
     "street_number" => 123,
     "zip_code" => "1111"
   );
 $preference->payer = $payer;
 $preference->notification_url = "http://mercado.konstela.com/ipn.php";
-$preference->external_reference = "merca-C-1314";
+$preference->external_reference = "juanymt@outlook.com";
 $preference->statement_descriptor = "Kons";
 $preference->save();
 ?>
